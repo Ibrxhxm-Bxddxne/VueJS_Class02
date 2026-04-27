@@ -1,0 +1,40 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers d'environnement
+.env
+.env.local
+.env.*.local
+
+# Build / dist
+dist/
+build/
+
+# Cache
+.cache/
+.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / éditeurs
+.vscode/
+.idea/
+
+# Fichiers temporaires
+*.tmp
+*.temp
+
+# JSON server (optionnel si tu modifies souvent)
+# db.json
+
+# Package lock (optionnel — souvent on le garde)
+# package-lock.json
