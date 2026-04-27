@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vue JS</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <div id="app">
+
+    <!-- Section Panier -->
+    <div class="cart">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Votre commande</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>[b-titre]</td>
+            <td>[h-nbrProduct]</td>
+          </tr>
+          <tr>
+            <td>Code Promo</td>
+            <td class="code-promo">
+              <input placeholder="Ajouter un code promo" />
+            </td>
+          </tr>
+          <tr>
+            <td>Total à payer</td>
+            <td>
+              <div v-if="promo === 'royale' ">
+                (-3€)
+                <span class="sale">[i-totalPrice] €</span>
+                [i-totalPrice - 3] €
+              </div>
+              <div v-else>[i-totalPrice] €</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Section Produit -->
+    <div class="product-section">
+
+      <!-- Image du produit -->
+      <div class="product-image">
+        [a-Image]
+      </div>
+
+      <!-- Description du produit -->
+      <div class="product-description">
+        <h1>[b-titre]</h1>
+        <p>[c-indisponsable]</p>
+
+        <p >
+          <span class="sale">[d-prix] € </span>
+          <span class="new-price"> [d-prix - 5] € PROMOTION</span>
+        </p>
+        <p >
+          <span class="price">[d-prix] €</span>
+        </p>
+
+        <br />
+        <strong>Ingrédients </strong>
+        <div>
+          <span >[e-Liste des Ingrédients]
+          </span>
+        </div>
+        <br />
+        <div class="sauces">
+          <strong>Sauces au choix</strong>
+          <ul>
+            <li >
+              [f-liste de Type de sauces]
+            </li>
+          </ul>
+        </div>
+        <div>
+          <strong>Valeurs nutritionnelles pour 100 grammes</strong>
+          <ul>
+            <li >
+              [g- liste energy]
+            </li>
+          </ul>
+        </div>
+
+        <!-- Bouton d'ajout au panier -->
+        <button>Ajouter à ma commande</button>
+        <br /><br />
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  
+</body>
+
+</html>
